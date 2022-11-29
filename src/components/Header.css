@@ -1,0 +1,28 @@
+.header{
+    width: 550px;
+    height: 65px;
+}
+
+.nav-icon {
+    height: 30px;
+    margin-right: 7px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #672280 , #A626D3);
+    padding: 0px 25px;
+}
+
+.nav-logo-text{
+    color:#ffff;
+    font-size: 20px; 
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.nav-title{
+    color:#ffff;
+    font-size: 12px; 
+}
