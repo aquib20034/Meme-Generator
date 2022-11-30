@@ -1,15 +1,14 @@
 import "./Header.css";
-import logo from '../images/react-logo.png';
+import logo from '../images/troll-face.png';
 export default function Header() {
-    return(
-        <div className="header">
-            <nav className="nav">
-                <img src={logo}  className="nav-icon" /> 
-                <h3 className='nav-logo-text'>Meme Generator</h3>
-                <label className='nav-title'>React Course - Project 1</label>
-            </nav>
-            
-        </div>
+    return (
+        <header className="header">
+            <img 
+                src={logo}
+                className="header--image"
+            />
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">React Course - Project 3</h4>
+        </header>
     )
-
 }

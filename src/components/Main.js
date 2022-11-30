@@ -1,20 +1,31 @@
 import './Main.css';
+import record from '../Database/record';
+import { useState } from 'react';
+
+import logo from '../images/troll-face.png';
 
 
 export default function Main(){
+    // let url;
+    const [url, setUrl] = useState([logo]);
+    const getMemeImage = event => {
+        event.preventDefault();
+        const memesArray = record.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        setUrl(memesArray[randomNumber].url);
+        console.log(url);
+
+    }
     return (
-        <div className='main'>
-            <div className='row'>
-                <div className='col'>
-                    <input type="text" placeholder="Shut up" name='' id='shutUp' required />
-                </div>
-                <div className='col'>
-                    <input type="text" placeholder="and take my money" name='' id='' required />
-                </div>
+        <main>
+            <img className='main-img' src={url} />
+            <form className='form'>
+                <input type="text" className='form--input' placeholder='top text'/>
+                <input type="text" className='form--input' placeholder='buttom text'/>
+                <button className='form--button' onClick={getMemeImage}>Get a new meme image 🖼</button>
+            </form>
 
-            </div>
-
-        </div>
+        </main>
 
     );
 

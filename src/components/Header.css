@@ -1,28 +1,23 @@
-.header{
-    width: 550px;
-    height: 65px;
-}
-
-.nav-icon {
-    height: 30px;
-    margin-right: 7px;
-}
-
-nav {
+.header {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to right, #672280 , #A626D3);
-    padding: 0px 25px;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
 }
 
-.nav-logo-text{
-    color:#ffff;
-    font-size: 20px; 
-    font-weight: bold;
+.header--image{
+    height: 100%;
+    margin-left: 6px;
+}
+
+.header--title{
+    font-size:1.25rem;
     margin-right: auto;
 }
 
-.nav-title{
-    color:#ffff;
-    font-size: 12px; 
+.header--project{
+    font-size: 0.75rem;
+    font-weight: 500;
 }
